@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1e1e1e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff4500;
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff4500;
+}
+
+.nav-links a.active {
+    color: #ff4500;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ff4500;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.get-started a {
+    background-color: #ff4500;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.social-icons a {
+    color: #ff4500;
+    margin-left: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ff4500;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.footer-bottom p {
+    color: #fff; 
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tracker intro section */
+.tracker-intro {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.tracker-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.tracker-content h1 {
+    font-size: 48px;
+    color: #1e1e1e;
+    font-weight: bold;
+    line-height: 1.2;
+    max-width: 45%;
+}
+
+.tracker-details {
+    max-width: 50%;
+}
+
+.tracker-details p {
+    font-size: 18px;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.tracker-features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature {
+    width: 48%;
+}
+
+.feature h2 {
+    font-size: 24px;
+    color: #1e1e1e;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .tracker-content {
+        flex-direction: column;
+    }
+
+    .tracker-content h1,
+    .tracker-details {
+        max-width: 100%;
+    }
+
+    .tracker-content h1 {
+        margin-bottom: 30px;
+    }
+
+    .tracker-features {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Tracker image section */
+.tracker-image {
+    background-color: #f0f4f8;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.tracker-image img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .tracker-image {
+        padding: 40px 20px;
+    }
+}
+
+/* Log now button */
+.log-now-container {
+    margin-top: 30px;
+}
+
+.log-now-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4c4caf;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.log-now-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .log-now-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}

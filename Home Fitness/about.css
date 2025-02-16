@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1e1e1e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff4500;
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ff4500;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ff4500;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after, .nav-links a.active::after {
+    width: 100%;
+}
+
+.get-started a {
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* About section */
+.about-home-fitness {
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: 40px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+    flex: 1;
+    max-width: 600px;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-home-fitness h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #765656;
+}
+
+.about-home-fitness p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333333;
+}
+
+/* Commitment to Excellence section */
+.commitment-to-excellence {
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.commitment-to-excellence h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.commitment-to-excellence .subheader {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.commitment-pillars {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;  
+    margin: 0 auto;
+}
+
+.pillar {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+    background-color: #ff4500;
+    color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pillar:hover {
+    transform: translateY(-10px);
+}
+
+.pillar-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.pillar h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.pillar p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+/* Mission and Team section */
+.mission-team {
+    display: flex;
+    padding: 60px 40px;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+.mission-content {
+    flex: 1;
+    padding-right: 40px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mission-team h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.mission-statement {
+    max-width: 1200px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #555;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.stat h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff4500;
+}
+
+.stat p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Meet Our Trainers section */
+.meet-our-trainers {
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.meet-our-trainers h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.meet-our-trainers .subheader {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.trainer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trainer-card {
+    background-color: #ff4500;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.trainer-card:hover {
+    transform: translateY(-5px);
+}
+
+.trainer-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.trainer-card h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0 5px;
+    color: #fff;
+}
+
+.trainer-card h4 {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.trainer-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #1e1e1e;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.social-icons a {
+    color: #ff4500;
+    margin-left: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ff4500;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.footer-bottom p {
+    color: #fff; 
+}
+
+.team-image {
+    margin-top: 50px; /* Adjust this value to move the image further down or up */
+}
+
+.team-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-hero {
+    background-image: url('images/home-workout.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 5%;
+}
+
+.about-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 50%;
+}
+
+.about-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        max-width: 80%;
+    }
+}
+
+
+.contact-us {
+    padding: 40px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-us .subheader {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e03e00;
+}

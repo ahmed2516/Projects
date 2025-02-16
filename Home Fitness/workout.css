@@ -1,0 +1,518 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #1e1e1e;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ff4500;
+  font-family: 'Arial', sans-serif;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff4500;
+}
+
+.nav-links a.active {
+  color: #ff4500;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ff4500;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.get-started a {
+  background-color: #ff4500;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+footer nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.social-icons a {
+  color: #ff4500;
+  margin-left: 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ff4500;
+  padding-top: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.footer-bottom p {
+  color: #fff; 
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Workout hero section */
+.workout-hero {
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.workout-hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Workout info section */
+.workout-info {
+  background-color: #f0f0f0;
+  padding: 30px;
+  text-align: center;
+}
+
+.workout-info h2 {
+  color: #ff4500;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.workout-info p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.workout-info strong {
+  font-weight: bold;
+}
+
+/* Free access section */
+.free-access {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.free-access h2 {
+  color: #1e1e1e;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.free-access .highlight {
+  color: #ff4500;
+}
+
+.free-access-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.free-access-image {
+  flex: 0 0 45%;
+  margin-right: 40px;
+  margin-top: 70px;
+}
+
+.free-access-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.free-access-text {
+  flex: 1;
+}
+
+.free-access-text p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.free-access-text ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.free-access-text li {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.free-access-text li::before {
+  content: "•";
+  color: #ff4500;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.free-access-text strong {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .free-access-content {
+    flex-direction: column;
+  }
+  
+  .free-access-image {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.strength-workouts {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.strength-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.strength-text {
+  flex: 0 0 50%;
+  padding-right: 40px;
+}
+
+.strength-text h2 {
+  color: #1e1e1e;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.strength-text .highlight {
+  color: #ff4500;
+  display: block;
+}
+
+.strength-text p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ff4500;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e63900;
+}
+
+.strength-image {
+  flex: 0 0 45%;
+}
+
+.strength-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .strength-content {
+    flex-direction: column;
+  }
+  
+  .strength-text {
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+  
+  .strength-image {
+    width: 100%;
+  }
+}
+
+.home-workouts {
+  background-color: #f0f0f0;
+  padding: 60px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.home-workouts-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-workouts-image {
+  flex: 0 0 50%;
+  margin-right: 40px;
+}
+
+.home-workouts-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.home-workouts-text {
+  flex: 0 0 45%;
+}
+
+.home-workouts-text h2 {
+  color: #1e1e1e;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.home-workouts-text .highlight {
+  color: #ff4500;
+  display: block;
+}
+
+.home-workouts-text p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.home-workouts-text .cta-button {
+  display: inline-block;
+  background-color: #ff4500;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.home-workouts-text .cta-button:hover {
+  background-color: #e63900;
+}
+
+@media (max-width: 768px) {
+  .home-workouts-content {
+    flex-direction: column;
+  }
+  
+  .home-workouts-image {
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .home-workouts-text {
+    width: 100%;
+  }
+}
+
+.plank-benefits {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.plank-benefits-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.plank-benefits-text {
+  flex: 0 0 55%;
+  padding-right: 40px;
+}
+
+.plank-benefits-text h2 {
+  color: #1e1e1e;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.plank-benefits-text .highlight {
+  color: #ff4500;
+  display: block;
+}
+
+.plank-benefits-text p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.plank-benefits-text .cta-button {
+  display: inline-block;
+  background-color: #ff4500;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.plank-benefits-text .cta-button:hover {
+  background-color: #e63900;
+}
+
+.plank-benefits-image {
+  flex: 0 0 45%;
+}
+
+.plank-benefits-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .plank-benefits-content {
+    flex-direction: column;
+  }
+  
+  .plank-benefits-text {
+    padding-right: 0;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .plank-benefits-image {
+    width: 100%;
+  }
+}

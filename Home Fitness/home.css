@@ -1,0 +1,572 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1e1e1e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff4500;
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ff4500;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #ff4500;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after, .nav-links a.active::after {
+    width: 100%;
+}
+
+.get-started a {
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    height: 80vh;
+    background-image: url('../images/man-exercising.png'); 
+    background-size: cover;
+    background-position: center 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(30, 30, 30, 0.7);
+}
+
+.hero-content {
+    background-color: rgba(30, 30, 30, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-buttons a {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.get-started-hero {
+    background-color: #ff4500;
+    color: #ffffff;
+}
+
+.get-started-hero:hover {
+    background-color: #e63900;
+}
+
+.learn-more {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.learn-more:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Mission and team section */
+.mission-team {
+    display: flex;
+    padding: 60px 40px;
+    background-color: #f0f0f0;
+}
+
+.mission-content {
+    flex: 1;
+    padding-right: 40px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mission-team h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.mission-statement {
+    max-width: 800px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #555;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.stat h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff4500;
+}
+
+.stat p {
+    font-size: 16px;
+    color: #555;
+}
+
+.team-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Workout plans section */
+.workout-plans {
+    padding: 60px 40px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.workout-plans h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.plans-description {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.plan-card {
+    background-color: #ff4500;
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.plan-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.plan-card p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.plan-price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.plan-button {
+    display: inline-block;
+    background-color: #1e1e1e;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.plan-button:hover {
+    background-color: #333333;
+}
+
+/* Workout schedule section */
+.workout-schedule {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+}
+
+.left-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.right-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.workout-options {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.workout-option {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .workout-schedule {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .left-content, .right-content {
+        max-width: 100%;
+    }
+
+    .workout-options {
+        flex-direction: column;
+    }
+}
+
+.testimonials-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.testimonials-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.testimonials-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+/* Testimonials Container */
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    border: 1px solid #e0e0e0;
+}
+
+.stars {
+    font-size: 20px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Client Info */
+.client-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.client-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.client-info div {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .testimonials-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.latest-fitness-insights {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.latest-fitness-insights h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.latest-fitness-insights > p {
+    margin-bottom: 20px;
+}
+
+.view-plans {
+    background-color: #ff4500;
+    border: 1px solid #ff4500;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    color: #fff;
+    max-width: 1200px;
+}
+
+.view-plans:hover {
+    background-color: #1e1e1e;
+    border-color: #1e1e1e;
+}
+
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.tag {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.read-more {
+    color: #ff4500;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.social-icons a {
+    color: #ff4500;
+    margin-left: 10px;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ff4500;
+    padding-top: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #fff;
+}
+
+.footer-bottom p {
+    color: #fff;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.testimonial-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.testimonial-card.reveal {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 1.2s ease-out forwards;
+}
+
