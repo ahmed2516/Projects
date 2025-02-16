@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roles</title>
+    <link rel="stylesheet" href="roles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="email-info">
+        <i class="bx bxs-envelope"></i>
+        <span>uosuk@uk.ac.com</span>
+      </div>
+      <div class="contact-info">
+        <i class="bx bxs-phone"></i>
+        <span>+442345678</span>
+      </div>
+      <div class="socials">
+        <i class="bx bxl-facebook-square"></i>
+        <i class="bx bxl-instagram"></i>
+        <i class="bx bxl-twitter"></i>
+        <i class="bx bxl-linkedin-square"></i>
+        <i class="bx bxl-youtube"></i>
+      </div>
+    </header>
+
+    <header class="card">
+      <nav class="navbar">
+        <span class="logo">
+          <i class="bx bxs-school"></i> University of <br />
+          stirling
+        </span>
+        <div class="links">
+          <a href="Home.html">Home</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="courses.html">Courses</a>
+          <a href="#">Faculty</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contactus.html">Contact Us</a>
+        </div>
+        <a href="applynow.php" class="button" style="text-decoration: none"
+          >Apply Now</a
+        >
+      </nav>
+    </header>
+
+    <div class="container-r">
+      <h2>CHOOSE YOUR ROLE</h2>
+      <div class="admin">
+        <img
+          src="data:image/png;base64,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"
+        />
+        <a href="loginadmin.php">
+          <p style="font-size: 28px">ADMIN</p>
+        </a>
+      </div>
+
+      <div class="student">
+        <img
+          src="data:image/png;base64,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"
+        />
+        <a href="loginstudent.php">
+        <p style="font-size: 28px">STUDENT</p>
+        </a>
+      </div>
+
+      <div class="admin">
+        <img
+          src="data:image/png;base64,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"
+        />
+        <a href="logintutor.php">
+        <p style="font-size: 28px">TUTOR</p></a>
+      </div>
+    </div>
+  </body>
+</html>

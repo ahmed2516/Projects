@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.contact-info {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 100px;
+}
+
+.email-info {
+  margin-right: 100px;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Poppins";
+  margin-left: 10px;
+}
+
+.socials {
+  margin-left: 850px;
+  display: inline-block;
+}
+.card {
+  color: white;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 31px;
+  color: #222222;
+}
+
+.links {
+  display: flex;
+  align-items: center; /* Align links vertically with logo */
+}
+
+.links a {
+  color: red;
+  text-decoration: none;
+  margin: 0 30px; /* Adjust spacing between links */
+}
+
+.button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #a70a32;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  outline: none;
+}
+
+.button:hover {
+  background-color: rosybrown;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .links {
+    flex: none;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Hero section styles */
+.hero {
+  background-image: url(imgs/Image\ \(6\).jpeg);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Courses section styles */
+.courses {
+  padding: 50px 0;
+}
+
+.course {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.course-image {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.course-info {
+  flex: 1;
+}
+
+.course-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.course-description {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#a70a32;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+
+.course-details{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.course-details img {
+    width: 500px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .container-h{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #333;
+    margin-top: 80px;
+  }
+  
+  .gen{
+    color: whitesmoke;
+    margin-top: 20px;
+  }
+  
+  .gen span{
+    font-size: 25px;
+    font-weight: 800;
+  }
+  
+  .column{
+    margin-top: 20px;
+  }
+  
+  .column a{
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 35px;
+  }
+  
+  ul{
+    list-style-type: none;
+    text-align: left;
+  }
+

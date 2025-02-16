@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="stylesheet" href="faq.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="email-info">
+        <i class="bx bxs-envelope"></i>
+        <span>uosuk@uk.ac.com</span>
+      </div>
+      <div class="contact-info">
+        <i class="bx bxs-phone"></i>
+        <span>+442345678</span>
+      </div>
+      <div class="socials">
+        <i class="bx bxl-facebook-square"></i>
+        <i class="bx bxl-instagram"></i>
+        <i class="bx bxl-twitter"></i>
+        <i class="bx bxl-linkedin-square"></i>
+        <i class="bx bxl-youtube"></i>
+      </div>
+    </header>
+
+    <header class="card">
+      <nav class="navbar">
+        <span class="logo">
+          <i class="bx bxs-school"></i> University of <br />
+          stirling
+        </span>
+        <div class="links">
+          <a href="Home.html">Home</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="courses.html">Courses</a>
+          <a href="#">Faculty</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contactus.html">Contact Us</a>
+        </div>
+        <a href="applynow.php" class="button" style="text-decoration: none"
+          >Apply Now</a
+        >
+      </nav>
+    </header>
+
+    <center style="padding-top: 50px; background-color: #f7f2f2">
+      <h3 style="color: #a82e18">FAQS</h3>
+      <h2>Frequently Asked Questions</h2>
+    </center>
+    <div class="container-faq">
+      <div class="faq">
+        <div class="column">
+          <div class="question" style="color: #a82e18">
+            Q: What programs does the University of stirling offer?<span
+              class="toggle"
+              >&#9660;</span
+            >
+          </div>
+          <div class="answer">
+            A: The University of stirling offers a wide range of undergraduate and
+            postgraduate programs in various disciplines including business,
+            engineering, health, humanities, and sciences.
+          </div>
+
+          <div class="question" style="color: #a82e18">
+            Q: How do I apply for admission?<span class="toggle">&#9660;</span>
+          </div>
+          <div class="answer">
+            A: You can apply for admission online through our website. Please
+            visit the admissions section for detailed instructions and
+            application deadlines.
+          </div>
+
+          <div class="question" style="color: #a82e18">
+            Q: Can international students apply?<span class="toggle"
+              >&#9660;</span
+            >
+          </div>
+          <div class="answer">
+            A: Yes, international students are welcome to apply. Please refer to
+            the international admissions section on our website for specific
+            requirements and application procedures for international
+            applicants.
+          </div>
+          <div class="question" style="color: #a82e18">
+            Q: What are the campus facilities like?<span class="toggle"
+              >&#9660;</span
+            >
+          </div>
+          <div class="answer">
+            A: The University of stirling provides modern campus facilities
+            including libraries, laboratories, sports centers, and student
+            accommodation. You can explore our campus virtually or schedule a
+            campus tour to see them firsthand.
+          </div>
+
+          <div class="question" style="color: #a82e18">
+            Q: Can I work part-time while studying?<span class="toggle"
+              >&#9660;</span
+            >
+          </div>
+          <div class="answer">
+            A: Yes, many students work part-time jobs while studying to support
+            themselves financially. The University of stirling offers various
+            opportunities for part-time employment both on-campus and in the
+            local community. However, it's important to balance work with your
+            studies to ensure academic success.
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="question" style="color: #a82e18">
+            Q: What are the tuition fees?<span class="toggle">&#9660;</span>
+          </div>
+          <div class="answer">
+            A: Tuition fees vary depending on the program of study and your
+            residency status. Please refer to the tuition fees section on our
+            website for current rates.
+          </div>
+
+          <div class="question" style="color: #a82e18">
+            Q: Are scholarships available?<span class="toggle">&#9660;</span>
+          </div>
+          <div class="answer">
+            A: Yes, the University of stirling offers scholarships and financial
+            aid to eligible students. Please visit the scholarships and
+            bursaries section on our website for more information.
+          </div>
+          <div class="question" style="color: #a82e18">
+            Q: How can I contact student services?<span class="toggle"
+              >&#9660;</span
+            >
+          </div>
+          <div class="answer">
+            A: You can contact student services by phone, email, or in person.
+            Visit the student services section on our website for contact
+            information and office hours.
+          </div>
+
+          <div class="question" style="color: #a82e18">
+            Q: What support services are available for students?<span
+              class="toggle"
+              >&#9660;</span
+            >
+          </div>
+          <div class="answer">
+            A: The University of stirling offers a range of support services to
+            help students succeed academically, emotionally, and socially. This
+            includes academic advising, counseling services, disability support,
+            career guidance, and more. Our dedicated student support team is
+            here to assist you throughout your academic journey.
+          </div>
+
+          <div class="question" style="color: #a82e18">
+            Q: Are there opportunities for research or internships?<span
+              class="toggle"
+              >&#9660;</span
+            >
+          </div>
+          <div class="answer">
+            A: Yes, the University of stirling encourages students to engage in
+            research projects, internships, and work placements to gain
+            practical experience and enhance their skills. We have partnerships
+            with industry leaders and research institutions to provide valuable
+            opportunities for students to apply their learning in real-world
+            settings.
+          </div>
+        </div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const questions = document.querySelectorAll(".question");
+
+            questions.forEach(function (question) {
+              question.addEventListener("click", function () {
+                const answer = this.nextElementSibling;
+                answer.style.display =
+                  answer.style.display === "block" ? "none" : "block";
+                this.querySelector(".toggle").innerHTML =
+                  answer.style.display === "block" ? "&#9650;" : "&#9660;";
+              });
+            });
+          });
+        </script>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-f">
+        <div class="fgen">
+          <i class="bx bxs-school"></i>
+          <span
+            >University of <br />
+            &nbsp;&nbsp; &nbsp;&nbsp;stirling</span
+          >
+          <br />
+          <br />
+          <p>University of stirling, Deane Road, stirling, BL3 5AB, UK.</p>
+          <br />
+          <i class="bx bxs-envelope" style="color: #a82e18"></i> uosuk@uk.ac.com
+          <br />
+          <i class="bx bxs-envelope" style="color: #a82e18"></i> uosuk@uk.ac.com
+          <br />
+          <i class="bx bxs-envelope" style="color: #a82e18"></i> uosuk@uk.ac.com
+        </div>
+        <div class="fcolumn">
+          <h2 style="color: #a82e18; font-size: 18px">Quick Links</h2>
+          <br />
+          <hr style="width: 3.5cm" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="fcolumn">
+          <h2 style="color: #a82e18; font-size: 18px">Academics</h2>
+          <br />
+          <hr style="width: 3.5cm" />
+          <ul>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#">Fees & Scholarships</a></li>
+            <li><a href="#">Student life</a></li>
+            <li><a href="#">Research</a></li>
+          </ul>
+        </div>
+        <div class="fcolumn">
+          <h2 style="color: #a82e18; font-size: 18px">Campus Life</h2>
+          <br />
+          <hr style="width: 3.5cm" />
+          <ul>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Dorms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <footer
+      class="copy"
+      style="color: aliceblue; background-color: black; height: 50px"
+    >
+      <i class="bx bx-copyright"></i> Copyright All Rights Reserved 2024,
+      University of stirling.
+      <div class="socials" style="margin-top: 10px">
+        <i class="bx bxl-facebook-square"></i>
+        <i class="bx bxl-instagram"></i>
+        <i class="bx bxl-twitter"></i>
+        <i class="bx bxl-linkedin-square"></i>
+        <i class="bx bxl-youtube"></i>
+      </div>
+    </footer>
+  </body>
+</html>
