@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.contact-info {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 100px;
+}
+
+.email-info {
+  margin-right: 100px;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Poppins";
+  margin-left: 10px;
+}
+
+.socials {
+  margin-left: 850px;
+  display: inline-block;
+}
+.card {
+  color: white;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 31px;
+  color: #222222;
+}
+
+.links {
+  display: flex;
+  align-items: center; /* Align links vertically with logo */
+}
+
+.links a {
+  color: red;
+  text-decoration: none;
+  margin: 0 30px; /* Adjust spacing between links */
+}
+
+.button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #a70a32;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  outline: none;
+}
+
+.button:hover {
+  background-color: rosybrown;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .links {
+    flex: none;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+.container-faq {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f7f2f2;
+    padding-top: 50px;
+  }
+  
+  .faq {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .question {
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .answer {
+    display: none;
+    margin-bottom: 20px;
+  }
+  
+  .toggle {
+    float: right;
+  }
+  
+  .faq hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+
+  .container-f {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #333;
+  }
+  
+  .fgen {
+    color: whitesmoke;
+    margin-top: 20px;
+  }
+  
+  .fgen span {
+    font-size: 25px;
+    font-weight: 800;
+  }
+  
+  .fcolumn {
+    margin-top: 20px;
+  }
+  
+  .fcolumn a {
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 35px;
+  }
+  
+  ul {
+    list-style-type: none;
+    text-align: left;
+  }

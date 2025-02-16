@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.contact-info {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 100px;
+}
+
+.email-info {
+  margin-right: 100px;
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Poppins";
+  margin-left: 10px;
+}
+
+.socials {
+  margin-left: 850px;
+  display: inline-block;
+}
+.card {
+  color: white;
+  padding: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 31px;
+  color: #222222;
+}
+
+.links {
+  display: flex;
+  align-items: center; /* Align links vertically with logo */
+}
+
+.links a {
+  color: red;
+  text-decoration: none;
+  margin: 0 30px; /* Adjust spacing between links */
+}
+
+.button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #a70a32;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  outline: none;
+}
+
+.button:hover {
+  background-color: rosybrown;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .links {
+    flex: none;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
+.container-r {
+    margin-top: 20px;
+    width: 100%;
+    height: 595px;
+    background: url("imgs/Auditorium01.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: #ffffff;
+    font-weight: 800;
+  }
+  
+  .container-r h2{
+  
+      position: absolute; /* Absolute positioning for the heading */
+      top: 0; /* Place the heading at the top */
+      margin-top: 50px;
+      left: 50%; /* Move the heading to the center horizontally */
+      transform: translateX(-50%); /* Adjust horizontally to center */
+    }
+  
+  .container-r a{
+    text-decoration: none;
+  }
+
+  .container-r p{
+    color: white;
+  }
+  .container-r a:visited {
+    color: inherit;
+  }
